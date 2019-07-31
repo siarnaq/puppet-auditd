@@ -483,7 +483,7 @@ class auditd (
     content => template('auditd/audit.rules.begin.fragment.erb'),
     order   => '00'
   }
-  file { '/etc/audisp/audispd.conf':
+  file { '/etc/auditd/audispd.conf':
     ensure  => 'file',
     owner   => 'root',
     group   => 'root',
